@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sceneBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #8FAADC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.HealthProgramController">
+   <children>
+      <Rectangle fx:id="pageHeader" arcHeight="5.0" arcWidth="5.0" fill="#003882" height="20.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" layoutY="20.0" stroke="WHITE" strokeType="INSIDE" width="800.0" />
+      <Label fx:id="pageSex" alignment="CENTER" layoutX="158.0" layoutY="39.0" prefHeight="46.0" prefWidth="440.0" text="Men's Weight Loss" textFill="WHITE">
+         <font>
+            <Font name="Gill Sans MT Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="difficulty" layoutX="510.0" layoutY="80.0" prefHeight="30.0" prefWidth="115.0" text="Beginner" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="25.0" layoutY="50.0" mnemonicParsing="false" onAction="#onBackClick" text="&lt;-- Back" />
+      <ScrollPane layoutY="125.0" prefHeight="580.0" prefWidth="800.0" style="-fx-border-color: none;">
+        <content>
+          <AnchorPane fx:id="scrollPaneBackground" minHeight="0.0" minWidth="0.0" prefHeight="1250.0" prefWidth="800.0" style="-fx-background-color: #8FAADC; -fx-border-color: none;">
+               <children>
+                  <Label fx:id="dailyTDEE11" layoutX="52.0" layoutY="1105.0" prefHeight="26.0" prefWidth="75.0" text="Workout">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Group>
+                     <children>
+                        <Rectangle fx:id="exercisesHeader" arcHeight="5.0" arcWidth="5.0" fill="#003882" height="40.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+                        <Label text="Your Exercises" textAlignment="CENTER" textFill="#fffefe" translateX="320.0" translateY="5.0">
+                           <font>
+                              <Font name="Gill Sans MT Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Label fx:id="exercise1" layoutX="40.0" layoutY="60.0" maxWidth="200.0" text="Exercise1" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise2" layoutX="300.0" layoutY="60.0" maxWidth="200.0" text="Exercise2" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise3" layoutX="550.0" layoutY="60.0" maxWidth="200.0" text="Exercise3" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise4" layoutX="40.0" layoutY="175.0" maxWidth="200.0" text="Exercise4" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise5" layoutX="300.0" layoutY="175.0" maxWidth="200.0" text="Exercise5" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise6" layoutX="550.0" layoutY="175.0" maxWidth="200.0" text="Exercise6" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="about" layoutX="490.0" layoutY="755.0" prefHeight="400.0" prefWidth="270.0" style="-fx-border-color: #003882; -fx-border-width: 4px;" text="A proper weight loss routine requires that a person maintain a calorie deficit regardless of their physical activity. A person who is very active but consumes more calories than they burn will NOT experience weight loss due to the fact that weight loss only occurs through CICO (Calories In, Calories Out)&#10;&#10;As such, the following program has been tuned to provide exercises that burn the most amount of calories, which are cardiovascular activies and High Intensity Interval Training exercises. You will be able to calculate the amount of calories that you have burned by inserting the duration of your exercise.&#10;&#10;Ultimately, you will be able to lose weight only if you are consistent when it comes to calories. As such, weight loss routines should be supplemented with healthy diets and calorie counting to provide the best results over time.&#10;&#10;The beginner program allows the user to lose 0.5 lbs a week, intermediate allows for 0.75 lbs, and advanced allows for 1 lb a week. These rates were chosen because anything over 1 lb a week can require people of various groups to go through a very low calorie intake, which can cause illness for some. " wrapText="true" />
+                  <Group>
+                     <children>
+                        <Rectangle fx:id="aboutHeader" arcHeight="5.0" arcWidth="5.0" fill="#003882" height="30.0" layoutX="490.0" layoutY="730.0" stroke="BLACK" strokeType="INSIDE" width="270.0" />
+                        <Label alignment="CENTER" layoutX="490.0" layoutY="725.0" text="About Your Program" textAlignment="CENTER" textFill="WHITE" translateX="44.0" translateY="5.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Label layoutX="20.0" layoutY="775.0" prefHeight="25.0" prefWidth="86.0" text="Daily TDEE" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="260.0" layoutY="775.0" text="Weekly TDEE" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dailyTDEE" alignment="CENTER" layoutX="25.0" layoutY="815.0" prefHeight="25.0" prefWidth="77.0" text="NUM1">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="weeklyTDEE" alignment="CENTER" layoutX="275.0" layoutY="815.0" prefHeight="25.0" prefWidth="77.0" text="NUM2">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#003882" height="30.0" layoutX="20.0" layoutY="730.0" stroke="BLACK" strokeType="INSIDE" width="350.0" />
+                  <Label alignment="CENTER" layoutX="111.0" layoutY="730.0" text="About Your Calories" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="125.0" layoutY="815.0" text="Calories" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="375.0" layoutY="815.0" text="Calories" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="865.0" text="Daily Calories to Lose" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="weightLoss" layoutX="170.0" layoutY="865.0" text="0.5 lbs a Week" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dailyCalories" alignment="CENTER" layoutX="50.0" layoutY="895.0" prefHeight="25.0" prefWidth="77.0" text="NUM3">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="150.0" layoutY="895.0" text="x 7 = " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="weeklyCalories" alignment="CENTER" layoutX="200.0" layoutY="895.0" prefHeight="25.0" prefWidth="77.0" text="NUM4">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="exerciseComboBox" layoutX="135.0" layoutY="1106.0" maxWidth="200.0" promptText="Select Workout" />
+                  <Group layoutX="-436.0" layoutY="280.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#003882" height="30.0" layoutX="490.0" layoutY="730.0" stroke="BLACK" strokeType="INSIDE" width="270.0" />
+                        <Label alignment="CENTER" layoutX="490.0" layoutY="725.0" text="Calculate Calories Burned" textAlignment="CENTER" textFill="WHITE" translateX="25.0" translateY="5.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Label fx:id="DurationTxtField" alignment="CENTER" layoutX="52.0" layoutY="1068.0" prefHeight="26.0" prefWidth="165.0" text="Duration (minutes)">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="workoutDuration" layoutX="227.0" layoutY="1069.0" prefHeight="25.0" prefWidth="46.0" promptText="30" />
+                  <Label layoutX="300.0" layoutY="1080.0" text="= " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="caloriesBurned" alignment="CENTER" layoutX="320.0" layoutY="1080.0" prefHeight="25.0" prefWidth="77.0" text="000">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="1080.0" text="Calories" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="155.0" layoutY="1155.0" mnemonicParsing="false" onAction="#calculateCaloriesBurned" text="Calculate" />
+                  <Circle fill="WHITE" layoutX="20.0" layoutY="70.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="280.0" layoutY="70.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="530.0" layoutY="70.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="20.0" layoutY="185.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="280.0" layoutY="185.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="530.0" layoutY="185.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="desc1" layoutX="20.0" layoutY="90.0" maxWidth="270.0" prefHeight="18.0" text="Desc1" wrapText="true" />
+                  <Label fx:id="desc2" layoutX="280.0" layoutY="90.0" maxWidth="270.0" prefHeight="18.0" text="Desc2" wrapText="true" />
+                  <Label fx:id="desc3" layoutX="530.0" layoutY="90.0" maxWidth="270.0" prefHeight="18.0" text="Desc3" wrapText="true" />
+                  <Label fx:id="desc4" layoutX="20.0" layoutY="205.0" maxWidth="270.0" prefHeight="18.0" text="Desc4" wrapText="true" />
+                  <Label fx:id="desc5" layoutX="280.0" layoutY="205.0" maxWidth="270.0" prefHeight="18.0" text="Desc5" wrapText="true" />
+                  <Label fx:id="desc6" layoutX="530.0" layoutY="205.0" maxWidth="270.0" prefHeight="18.0" text="Desc6" wrapText="true" />
+                  <Label fx:id="exercise7" layoutX="40.0" layoutY="290.0" maxWidth="200.0" text=" Exercise7 " textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise8" layoutX="300.0" layoutY="290.0" maxWidth="200.0" text=" Exercise8" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise9" layoutX="550.0" layoutY="290.0" maxWidth="200.0" text=" Exercise9" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="WHITE" layoutX="280.0" layoutY="300.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="530.0" layoutY="300.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="20.0" layoutY="300.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="desc7" layoutX="20.0" layoutY="320.0" maxWidth="270.0" prefHeight="18.0" text="Desc7" wrapText="true" />
+                  <Label fx:id="desc9" layoutX="530.0" layoutY="320.0" maxWidth="270.0" prefHeight="18.0" text="Desc9" wrapText="true" />
+                  <Label fx:id="desc8" layoutX="280.0" layoutY="320.0" maxWidth="270.0" prefHeight="18.0" text="Desc8" wrapText="true" />
+                  <Label fx:id="exercise11" layoutX="300.0" layoutY="405.0" maxWidth="200.0" text=" Exercise11" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise10" layoutX="40.0" layoutY="405.0" maxWidth="200.0" text=" Exercise10" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise12" layoutX="550.0" layoutY="405.0" maxWidth="200.0" text=" Exercise12" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="desc12" layoutX="530.0" layoutY="435.0" maxWidth="270.0" prefHeight="18.0" text="Desc12" wrapText="true" />
+                  <Label fx:id="desc11" layoutX="280.0" layoutY="435.0" maxWidth="270.0" prefHeight="18.0" text="Desc11" wrapText="true" />
+                  <Label fx:id="desc10" layoutX="20.0" layoutY="435.0" maxWidth="270.0" prefHeight="18.0" text="Desc10" wrapText="true" />
+                  <Circle fill="WHITE" layoutX="530.0" layoutY="415.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="280.0" layoutY="415.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="20.0" layoutY="415.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="exercise15" layoutX="550.0" layoutY="520.0" maxWidth="200.0" text=" Exercise15" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise14" layoutX="300.0" layoutY="520.0" maxWidth="200.0" text=" Exercise14" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercise13" layoutX="40.0" layoutY="520.0" maxWidth="200.0" text=" Exercise13" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="WHITE" layoutX="20.0" layoutY="530.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="280.0" layoutY="530.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="530.0" layoutY="530.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="desc15" layoutX="530.0" layoutY="550.0" maxWidth="270.0" prefHeight="18.0" text="Desc15" wrapText="true" />
+                  <Label fx:id="desc14" layoutX="280.0" layoutY="550.0" maxWidth="270.0" prefHeight="18.0" text="Desc14" wrapText="true" />
+                  <Label fx:id="desc13" layoutX="20.0" layoutY="550.0" maxWidth="270.0" prefHeight="18.0" text="Desc13" wrapText="true" />
+                  <Circle fill="WHITE" layoutX="530.0" layoutY="645.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="exercise18" layoutX="550.0" layoutY="635.0" maxWidth="200.0" text=" Exercise18" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="desc18" layoutX="530.0" layoutY="665.0" maxWidth="270.0" prefHeight="18.0" text="Desc18" wrapText="true" />
+                  <Circle fill="WHITE" layoutX="280.0" layoutY="645.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="exercise17" layoutX="300.0" layoutY="635.0" maxWidth="200.0" text=" Exercise17" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="desc17" layoutX="280.0" layoutY="665.0" prefHeight="18.0" text="Desc17" wrapText="true" />
+                  <Label fx:id="exercise16" layoutX="40.0" layoutY="635.0" maxWidth="200.0" text=" Exercise16" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="WHITE" layoutX="20.0" layoutY="645.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="desc16" layoutX="20.0" layoutY="665.0" maxWidth="270.0" prefHeight="18.0" text="Desc16" wrapText="true" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ImageView fx:id="banner" fitHeight="120.0" fitWidth="105.0" layoutX="695.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Banner.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

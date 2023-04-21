@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.HealthTabController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutY="30.3" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="200.0" />
+      <ButtonBar layoutX="285.0" layoutY="92.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#onBMIClick" text="BMI" />
+            <Button mnemonicParsing="false" onAction="#onBMRClick" text="BMR" />
+            <Button mnemonicParsing="false" onAction="#onTDEEClick" text="TDEE" />
+        </buttons>
+      </ButtonBar>
+      <Button layoutX="13.0" layoutY="361.0" mnemonicParsing="false" onAction="#onAboutHealthClick" text="About my Health" />
+      <ButtonBar prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #055cad;">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#onHomeClick" text="Home" translateX="-175.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Health" translateX="-150.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onProgramClick" text="Program" translateX="-125.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onResourcesClick" text="Resources" translateX="-100.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+      <Label fx:id="output" layoutX="400.0" layoutY="130.0" text="00">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="warning" layoutX="63.0" layoutY="275.0" text="Please complete the questionnaires in the home tab to access the functionality of this tab." />
+      <Label fx:id="displayHeight" layoutX="14.0" layoutY="30.0" text="Height:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="displayWeight" layoutX="14.0" layoutY="70.0" text="Weight:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="displayAge" layoutX="14.0" layoutY="110.0" text="Age:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="displaySex" layoutX="14.0" layoutY="150.0" text="Sex:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="190.0" text="Activity:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="displayActivity" layoutX="110.0" layoutY="205.0" />
+      <Label alignment="CENTER" layoutX="275.0" layoutY="240.0" prefHeight="19.0" prefWidth="75.0" style="-fx-border-color: black;" text="Underweight" />
+      <Label alignment="CENTER" layoutX="350.0" layoutY="240.0" prefHeight="19.0" prefWidth="75.0" style="-fx-border-color: black;" text="Adequate" />
+      <Label alignment="CENTER" layoutX="425.0" layoutY="240.0" prefHeight="19.0" prefWidth="75.0" style="-fx-border-color: black;" text="Overweight" />
+      <Label alignment="CENTER" layoutX="500.0" layoutY="240.0" prefHeight="19.0" prefWidth="75.0" style="-fx-border-color: black;" text="Obese" />
+      <Line endX="200.0" layoutX="375.0" layoutY="225.0" startX="-100.0" />
+      <Ellipse fx:id="scale" fill="#1391ff" layoutX="275.0" layoutY="220.0" radiusX="4.0" radiusY="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="325.0" layoutY="60.0" text="Your Health Values">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

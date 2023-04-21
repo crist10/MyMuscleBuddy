@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.QuestionnaireController">
+    <children>
+        <ScrollPane prefHeight="400.0" prefWidth="600.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="585.0">
+                    <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055cad" height="30.0" layoutY="670.0" stroke="BLACK" strokeType="INSIDE" width="585.0" />
+                        <Label layoutX="20.0" layoutY="90.0" prefHeight="30.0" prefWidth="34.0" text="Sex">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="350.0" layoutY="90.0" prefHeight="27.0" prefWidth="67.0" text="Weight:">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="Weight" layoutX="425.0" layoutY="92.0" prefHeight="25.0" prefWidth="85.0" promptText="example: 150" />
+                        <Label layoutX="350.0" layoutY="150.0" prefHeight="27.0" prefWidth="50.0" text="Age:">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="Age" layoutX="425.0" layoutY="152.0" prefHeight="25.0" prefWidth="85.0" promptText="example: 20" />
+                        <Label layoutX="20.0" layoutY="150.0" prefHeight="27.0" prefWidth="135.0" text="Weekly Activity">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="350.0" layoutY="210.0" prefHeight="27.0" prefWidth="62.0" text="Height:">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="Feet" layoutX="425.0" layoutY="210.0" prefHeight="25.0" prefWidth="75.0" promptText="example: 5" />
+                        <Label alignment="CENTER" layoutX="174.0" layoutY="25.0" prefHeight="35.0" prefWidth="260.0" text="Health Questionnaire ">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="170.0" layoutY="330.0" prefHeight="35.0" prefWidth="260.0" text="Goal Questionnaire">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="20.0" layoutY="400.0" prefHeight="27.0" prefWidth="140.0" text="Your Fitness Goal">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="360.0" layoutY="400.0" text="Experience Related to Goal">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="260.0" layoutY="580.0" mnemonicParsing="false" onAction="#onNextClick" text="Submit" />
+                        <TextField fx:id="Inches" layoutX="425.0" layoutY="240.0" prefHeight="25.0" prefWidth="75.0" promptText="example: 8" />
+                  <Label layoutX="515.0" layoutY="210.0" prefHeight="27.0" prefWidth="30.0" text="Feet" />
+                  <Label layoutX="515.0" layoutY="240.0" prefHeight="27.0" prefWidth="43.0" text="Inches" />
+                  <Label layoutX="515.0" layoutY="92.0" prefHeight="27.0" prefWidth="30.0" text="Lbs" />
+                  <RadioButton fx:id="goal1" layoutX="30.0" layoutY="440.0" mnemonicParsing="false" text="Lose Weight">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="goalButtons" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="goal2" layoutX="30.0" layoutY="480.0" mnemonicParsing="false" text="Build Muscle" toggleGroup="$goalButtons" />
+                  <RadioButton fx:id="goal3" layoutX="30.0" layoutY="520.0" mnemonicParsing="false" text="Build Strength" toggleGroup="$goalButtons" />
+                  <RadioButton fx:id="exp1" layoutX="420.0" layoutY="440.0" mnemonicParsing="false" text="Beginner">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="experienceButtons" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="exp2" layoutX="420.0" layoutY="480.0" mnemonicParsing="false" text="Intermediate" toggleGroup="$experienceButtons" />
+                  <RadioButton fx:id="exp3" layoutX="420.0" layoutY="520.0" mnemonicParsing="false" text="Advanced" toggleGroup="$experienceButtons" />
+                  <RadioButton fx:id="Male" layoutX="70.0" layoutY="100.0" mnemonicParsing="false" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="sexButtons" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="Female" layoutX="140.0" layoutY="100.0" mnemonicParsing="false" text="Female" toggleGroup="$sexButtons" />
+                  <RadioButton fx:id="Exercise1" layoutX="25.0" layoutY="185.0" mnemonicParsing="false" text="None (0 days)">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="exerciseButtons" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="Exercise2" layoutX="25.0" layoutY="215.0" mnemonicParsing="false" text="Light (1-2 days)" toggleGroup="$exerciseButtons" />
+                  <RadioButton fx:id="Exercise3" layoutX="25.0" layoutY="245.0" mnemonicParsing="false" text="Moderate (3-4 days)" toggleGroup="$exerciseButtons" />
+                  <RadioButton fx:id="Exercise4" layoutX="25.0" layoutY="275.0" mnemonicParsing="false" text="Very Active (4-6 days)" toggleGroup="$exerciseButtons" />
+                  <Button layoutX="15.0" layoutY="30.0" mnemonicParsing="false" onAction="#onBackClick" text="&lt;- Back" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055cad" height="3.0" layoutY="310.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.HomeController">
+   <children>
+      <Button layoutX="460.0" layoutY="360.0" mnemonicParsing="false" onAction="#onQuestionnaireClick" text="Create Questionnaire" />
+      <Label layoutX="220.0" layoutY="45.0" text="MyMuscleBuddy">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <ScrollPane layoutX="380.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="10.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Muscles">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="muscle" layoutX="10.0" layoutY="30.0" text="* Highlighted Muscle" />
+                  <Text layoutX="10.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recommended Exercises">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="exercise1" layoutX="10.0" layoutY="100.0" text="* Exercise 1" />
+                  <Label fx:id="exercise2" layoutX="10.0" layoutY="150.0" text="* Exercise 2" />
+                  <Label fx:id="exercise3" layoutX="10.0" layoutY="200.0" text="* Exercise 3" />
+                  <Label fx:id="exercise4" layoutX="10.0" layoutY="250.0" text="* Exercise 4" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="10.0" layoutY="360.0" mnemonicParsing="false" onAction="#onPurposesClick" prefHeight="25.0" prefWidth="213.0" text="Purposes and Services of the System" />
+      <ImageView fx:id="musclePicker" fitHeight="200.0" fitWidth="100.0" layoutX="78.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@body.jpg" />
+         </image>
+      </ImageView>
+      <ButtonBar prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #055cad;">
+        <buttons>
+          <Button mnemonicParsing="false" text="Home" translateX="-175.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onHealthClick" text="Health" translateX="-150.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onProgramClick" text="Program" translateX="-125.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onResourcesClick" text="Resources" translateX="-100.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <ComboBox fx:id="musclePickerComboBox" layoutX="42.0" layoutY="300.0" prefWidth="150.0" promptText="Muscle Picker" />
+   </children>
+</AnchorPane>

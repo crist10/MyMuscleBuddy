@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.AboutHealthController">
+   <children>
+      <Button layoutX="15.0" layoutY="45.0" mnemonicParsing="false" onAction="#onBackClick" text="&lt;-- Return to Health" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055cad" height="30.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055cad" height="30.0" layoutY="370.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label layoutX="195.0" layoutY="75.0" text="About your Health">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea layoutY="136.0" prefHeight="234.0" prefWidth="600.0" text="* Your BMI (Body Mass Index) was calculated through the Quetelet Index formula which was invented by Statistician, Mathematician, Astronomer Lambert Adolphe Jacques Quetelet in the 1830s. Quetelet invented the index in order to identify what can be considered the average man. Although the Body Mass Index is regularly used to this day, it is not a perfect tool as it attempts to find averages based on estimates regarding the body's mass. As such, this may at times provide inaccurate results when it comes to individuals who are bodybuilders or those who have a lot of muscle in their bodies. Regardless, on average cases, BMI  can still be relied to produce a proper result when it comes to a person's weight class.&#10; &#10;- Quetelet Index Formula: (weight / (height * height) ) * 703&#10;&#10;* Your BMR (Basal Metabolic Rate) was calculated through the Mifflin St. Jeor equation which was invented by Dr. Sachiko St Jeor and is widely regarded as the best equation to calculate a body's metabolic rate (calories that your body burns at a state of absolute rest).&#10;&#10;-Mifflin St. Jeor Equation: &#10;(men) ((4.536 * weight) + (15.88 * height) - (5 * age) + 5)&#10;(women) ((4.536 * weight) + (15.88 * height) - (5 * age) - 161))&#10;&#10;*Your TDEE (Total Daily Energy Expenditure) was calculated through the same formula as BMR, but also taking a person's activity level into consideration due to the fact that the more active they are, the more calories they will burn. &#10;&#10;-Mifflin St. Jeor Equation (TDEE):&#10;(men) ((4.536 * weight) + (15.88 * height) - (5 * age) + 5) * activityMultiplier)&#10;(women) ((4.536 * weight) + (15.88 * height) - (5 * age) - 161) * activityMultiplier)" wrapText="true" />
+   </children>
+</AnchorPane>
